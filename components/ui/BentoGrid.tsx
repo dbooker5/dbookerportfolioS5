@@ -85,8 +85,8 @@ export const BentoGridItem = ({
         {/* Animated BG */}
         {id === 6 && (
           <BackgroundGradientAnimation>
-            <div className="absolute inset-0 z-50 flex items-center justify-center text-white font-bold">
-            </div>
+            {/* <div className="absolute inset-0 z-50 flex items-center justify-center text-white font-bold">
+            </div> */}
           </BackgroundGradientAnimation>
         )}
 
@@ -94,7 +94,7 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "relative md:h-full min-h-40 flex flex-col px-5 py-5 lg:p-10 transition duration-200 group-hover/bento:translate-x-2"
+            "relative z-50 md:h-full min-h-40 flex flex-col px-5 py-5 lg:p-10 transition duration-200 group-hover/bento:translate-x-2"
           )}
         >
           <div className="font-sans text-sm font-extralight text-[#c1c2d3] md:text-xs lg:text-base z-10">
