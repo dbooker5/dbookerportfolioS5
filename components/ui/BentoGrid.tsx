@@ -13,7 +13,7 @@ export const BentoGrid = ({ className, children }: { className?: string; childre
   return (
     <div
       className={cn(
-        "mx-auto grid max-w-7xl grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-3",
+        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
         className
       )}
     >
@@ -68,7 +68,7 @@ export const BentoGridItem = ({
           <img
             src={img}
             alt={img}
-            className={cn("object-cover object-center", imgClassName)}
+            className={cn("object-cover object-center absolute h-full w-full ", imgClassName)}
           />
         )}
 
@@ -108,9 +108,9 @@ export const BentoGridItem = ({
           {id === 2 && <GlobeDemo />}
 
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              <div className="flex flex-col gap-3 lg:gap-8">
-                {["React.js", "Next.js", "TypeScript"].map((item) => (
+            <div className="flex gap-1 lg:gap-2 w-fit absolute -right-3 lg:-right-2">
+              <div className="flex flex-col gap-3 lg:gap-1">
+                {["Typescript", "Flutter", "Angular.js", "React.js", "Dart"].map((item) => (
                   <span
                     key={item}
                     className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
@@ -120,9 +120,9 @@ export const BentoGridItem = ({
                 ))}
                 <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"/>
               </div>
-              <div className="flex flex-col gap-3 lg:gap-8">
+              <div className="flex flex-col gap-3 lg:gap-1">
                 <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"/>
-                {["Flutter", "Cloud", "Firebase"].map((item) => (
+                {["Azure", "NeonPostgres","Firebase", "Figma", "Adobe"].map((item) => (
                   <span
                     key={item}
                     className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
