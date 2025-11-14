@@ -9,7 +9,7 @@ export const gridItems = [
   {
     id: 1,
     title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
+    description: "I believe the best results come from working closely with clients at every stage. By maintaining transparent communication, sharing progress openly, and welcoming feedback, I ensure that every decision aligns with the client&apos;s needs and vision. This collaborative approach builds trust, clarity, and a final product that truly meets expectations.",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building smarter systems through automation & innovation.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -81,7 +81,7 @@ export const projects = [
   {
     id: 2,
     title: "FoodGo - Food Delivery App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    des: "FoodGo delivers fresh meals fast with seamless navigation, secure payments, and reliable service.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://github.com/dbooker5?tab=repositories",
@@ -96,11 +96,11 @@ export const projects = [
   },
   {
     id: 4,
-    title: "FoodGo - Food Delivery App",
-    des: "FoodGo is a modern food delivery app connecting users to restaurants with fast, reliable, and seamless service.",
+    title: "Tally App",
+    des: "Tally App simplifies inventory management by tracking stock, sales, and business performance with real-time insights.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/dbooker5/foodgo",
+    link: "https://github.com/dbooker5?tab=repositories",
   },
 ];
 
