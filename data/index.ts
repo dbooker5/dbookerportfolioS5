@@ -8,8 +8,9 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "I believe the best results come from working closely with clients at every stage. By maintaining transparent communication, sharing progress openly, and welcoming feedback, I ensure that every decision aligns with the client&apos;s needs and vision. This collaborative approach builds trust, clarity, and a final product that truly meets expectations.",
+    title: "I'm a passionate developer and security-focused software engineer",
+    description: "Dedicated to building robust,secure, and scalable systems. My expertise spans cloud and network security, ethical hacking, and full-stack development—equipping me to create solutions that are not only functional but also resilient against real-world threats. This site highlights my technical projects, core competencies, and ongoing journey in software development and cybersecurity. Alongside my technical approach, I believe the best results come from working closely with clients at every stage. By maintaining transparent communication, sharing progress openly, and welcoming feedback, I ensure that every decision aligns with the client's vision. This collaborative process builds trust, clarity, and a final product that truly meets expectations.",
+    
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -50,7 +51,7 @@ export const gridItems = [
   {
     id: 5,
     title: "Currently building smarter systems through automation & innovation.",
-    description: "The Inside Scoop",
+    description: "By integrating modern AI capabilities into development workflows,I leverage AI-driven tools and intelligent automation to streamline processes, enhance system reliability, and deliver solutions that adapt and learn.",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
