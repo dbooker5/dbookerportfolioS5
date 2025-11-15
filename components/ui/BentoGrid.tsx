@@ -98,18 +98,19 @@ export const BentoGridItem = ({
             "relative z-50 md:h-full min-h-40 flex flex-col px-5 py-5 lg:p-10 transition duration-200 group-hover/bento:translate-x-2"
           )}
         >
-          <div className="font-sans text-sm font-extralight text-[#c1c2d3] md:text-xs lg:text-base z-10">
-            {description}
-          </div>
           <div className="lg:text-3xl max-w-96 z-10 font-sans font-bold text-lg dark:text-neutral-200">
             {title}
+          </div>
+
+          <div className="font-sans text-sm font-extralight text-[#c1c2d3] md:text-xs lg:text-base z-10 mt-2">
+            {description}
           </div>
 
           {id === 2 && <GlobeDemo />}
 
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-2 w-fit absolute -right-3 lg:-right-2">
-              <div className="flex flex-col gap-3 lg:gap-1">
+            <div className="flex gap-1 lg:gap-1 w-fit absolute -right-3 lg:-right-2">
+              <div className="flex flex-col gap-3 lg:gap-2">
                 {["Typescript", "Flutter", "Angular.js", "React.js", "Dart"].map((item) => (
                   <span
                     key={item}
@@ -120,7 +121,7 @@ export const BentoGridItem = ({
                 ))}
                 <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"/>
               </div>
-              <div className="flex flex-col gap-3 lg:gap-1">
+              <div className="flex flex-col gap-3 lg:gap-2">
                 <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"/>
                 {["Azure", "NeonPostgres","Firebase", "Figma", "Adobe"].map((item) => (
                   <span
