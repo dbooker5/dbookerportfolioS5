@@ -10,7 +10,6 @@ export const gridItems = [
     id: 1,
     title: "I'm a passionate developer and security-focused software engineer",
     description: "Dedicated to building robust,secure, and scalable systems. My expertise spans cloud and network security, ethical hacking, and full-stack development—equipping me to create solutions that are not only functional but also resilient against real-world threats. This site highlights my technical projects, core competencies, and ongoing journey in software development and cybersecurity. Alongside my technical approach, I believe the best results come from working closely with clients at every stage. By maintaining transparent communication, sharing progress openly, and welcoming feedback, I ensure that every decision aligns with the client's vision. This collaborative process builds trust, clarity, and a final product that truly meets expectations.",
-    
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -108,33 +107,33 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Booker embraces AI, innovation, and continuous learning with impressive enthusiasm. His creativity and determination show in every challenge he tackles, making collaboration both productive and enjoyable. If your team values forward-thinking talent and dependable execution, Booker’s mindset and work ethic make him a compelling addition to any meaningful project.",
+    name: "Winnie Mumbe",
+    title: "Founder of Nyansapo Ai",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Booker brings excellence, innovation, and clear thinking into every environment he joins. His ability to stay organized, deliver results, and collaborate effectively makes him especially reliable. If achieving quality outcomes is your priority, Booker’s commitment, consistency, and technical strength make him an ideal contributor to any development team.",
+    name: "Simon Gunyali",
+    title: "Chief Operating Officer at Studio5ive Org",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Booker demonstrates responsibility, maturity, and dedication in every task he takes on. His focus, strong work ethic, and ability to communicate effectively ensure projects run smoothly and successfully. If you’re looking for someone who blends professionalism with genuine passion, Booker consistently proves to be a valuable and dependable partner.",
+    name: "Prisca Cheptoo",
+    title: "Manager of Lembere Computer Solutions",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Booker is a developer who elevates every project with structure, clarity, and commitment. His thoughtful approach to engineering, efficient problem-solving, and eagerness to learn create a seamless working experience. If you need someone dependable, skilled, and genuinely passionate about building better software, Booker is an outstanding choice.",
+    name: "Bill Finidi",
+    title: "Senior Developer at Studio5ive Org",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with Booker has been consistently inspiring. His discipline, curiosity, and strong communication skills shine in every engagement. He approaches challenges thoughtfully and delivers high-quality outcomes with admirable consistency. If you value professionalism, growth, and reliability, Booker is exactly the kind of collaborator who transforms goals into results.",
+    name: "Prof. Judy Ouma",
+    title: "Softskills Trainer and Consultant at Cyber Shujaa",
   },
 ];
 
