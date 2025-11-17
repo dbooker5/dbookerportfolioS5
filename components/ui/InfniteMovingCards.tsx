@@ -3,6 +3,7 @@
 import { cn } from "@/utils/cn";
 import React, { useEffect, useState } from "react";
 
+
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
@@ -14,6 +15,7 @@ export const InfiniteMovingCards = ({
     quote: string;
     name: string;
     title: string;
+    img?: string; // Add this line - make it optional for backward compatibility
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -26,7 +28,9 @@ export const InfiniteMovingCards = ({
   useEffect(() => {
     addAnimation();
   }, []);
+  
   const [start, setStart] = useState(false);
+  
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
@@ -43,6 +47,7 @@ export const InfiniteMovingCards = ({
       setStart(true);
     }
   }
+  
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
@@ -58,6 +63,7 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+  
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
@@ -69,6 +75,7 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+  
   return (
     <div
       ref={containerRef}
@@ -104,16 +111,19 @@ export const InfiniteMovingCards = ({
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                    <div className="me-3">
-                        <img src="/profile1.svg" 
-                        alt="profile1" />
+                <span className="flex flex-row items-center gap-3">
+                    <div className="flex-shrink-0">
+                        <img 
+                          src={item.img || "/profile1.svg"} 
+                          alt={`${item.name} profile`}
+                          className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover"
+                        />
                     </div>
                     <div className="flex flex-col gap-1">
-                        <span className="text-xl leading-[1.6] font-bold  dark:text-white">
+                        <span className="text-xl leading-[1.6] font-bold dark:text-white">
                             {item.name}
                         </span>
-                        <span className="text-sm leading-[1.6] font-normal  dark:text-white-200">
+                        <span className="text-sm leading-[1.6] font-normal dark:text-white-200">
                             {item.title}
                         </span>
                     </div>
