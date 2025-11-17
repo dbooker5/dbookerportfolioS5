@@ -13,7 +13,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/b1.png",
     spareImg: "",
   },
   {
@@ -75,15 +75,15 @@ export const projects = [
     title: "Studio5ive: Crafting a Dynamic Digital Identity",
     des: "Modern. Creative. Innovative. A digital space built to offer services and inspire ideas.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/dbooker5?tab=repositories",
+    iconLists: ["/html.svg", "/css.svg", "/js.svg", "/fb.svg", "/phps.svg"],
+    link: "https://www.studio5ive.org",
   },
   {
     id: 2,
     title: "FoodGo - Food Delivery App",
     des: "FoodGo delivers fresh meals fast with seamless navigation, secure payments, and reliable service.",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/fl.svg", "/dart.svg", "/cpp.svg", "/fb.svg", "/ands.svg"],
     link: "https://github.com/dbooker5?tab=repositories",
   },
   {
@@ -91,15 +91,15 @@ export const projects = [
     title: "DevOps Practises - Acquistion Project",
     des: "Empowering teams to build, deploy, and scale seamlessly with modern DevOps tools and continuous integration excellence.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: ["/js.svg", "/pshell.svg", "/neon.svg", "/dock.svg", "/ws.svg"],
     link: "https://github.com/dbooker5/acquisitions",
   },
   {
     id: 4,
-    title: "Tally App",
+    title: "Tally App - Design",
     des: "Tally App simplifies inventory management by tracking stock, sales, and business performance with real-time insights.",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    iconLists: ["/figma.svg", "/ai.svg", "/pshop.svg", "/ae.svg", "/canva.svg"],
     link: "https://github.com/dbooker5?tab=repositories",
   },
 ];
@@ -140,33 +140,9 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "studio5ive",
+    img: "/s5logo.svg",
+    nameImg: "/studio5ive.svg",
   },
 ];
 
@@ -205,13 +181,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/dbooker5",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://x.com/dobookerS5",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/booker-otieno-ethicalhacker",
   },
 ];
