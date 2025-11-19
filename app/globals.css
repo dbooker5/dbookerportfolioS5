@@ -79,11 +79,23 @@
 }
 
 @layer utilities {
+  /* FIXED: Added text-white and responsive sizing */
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+    @apply font-bold text-4xl md:text-5xl lg:text-6xl text-center text-white;
+    /* Add line-height for better readability */
+    line-height: 1.2;
   }
 
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
+  }
+
+  /* BONUS: Add these utility classes for consistency */
+  .text-purple {
+    color: #CBACF9;
+  }
+
+  .text-white-200 {
+    color: rgba(255, 255, 255, 0.7);
   }
 }
