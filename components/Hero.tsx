@@ -1,16 +1,22 @@
-import { Spotlight } from './ui/Spotlight'
-import React from 'react'
-import { TextGenerateEffect } from './ui/TextGenerateEffect'
-import MagicButton from './ui/MagicButton'
-import { FaLocationArrow } from 'react-icons/fa6'
+import { Spotlight } from "./ui/Spotlight";
+import React from "react";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "./ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
   return (
     <div className="relative pb-20 pt-36">
       {/* Spotlights */}
       <div>
-        <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
-        <Spotlight className="top-10 left-full h-[80vh] w-[50vw]" fill="purple" />
+        <Spotlight
+          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
+          fill="white"
+        />
+        <Spotlight
+          className="top-10 left-full h-[80vh] w-[50vw]"
+          fill="purple"
+        />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
       </div>
 
@@ -35,7 +41,7 @@ const Hero = () => {
             Hi, I&apos;m Booker — a Software Developer based in Kenya.
           </p>
 
-          <a href='#about'>
+          <a href="#about">
             <MagicButton
               title="Show More"
               icon={<FaLocationArrow />}
@@ -45,7 +51,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

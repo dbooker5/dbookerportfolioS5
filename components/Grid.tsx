@@ -4,7 +4,10 @@ import { gridItems } from "@/data";
 const Grid = () => {
   return (
     // ADDED: relative and z-20 to ensure it's above the hero background
-    <section id="about" className="relative z-20 w-full py-20 bg-black-100 rounded-3xl mx-4 md:mx-8">
+    <section
+      id="about"
+      className="relative z-20 w-full py-20 bg-black-100 rounded-3xl mx-4 md:mx-8"
+    >
       {/* Heading */}
       <div className="flex flex-col items-center mb-16 px-4">
         <h1 className="heading text-center text-white text-4xl md:text-5xl lg:text-6xl font-bold max-w-7xl">
@@ -28,7 +31,9 @@ const Grid = () => {
             imgClassName={item.imgClassName}
             titleClassName={item.titleClassName}
             spareImg={item.spareImg}
-            glowColor={item.glowColor as "blue" | "purple" | "green" | "cyan" | undefined}
+            glowColor={
+              item.glowColor as "blue" | "purple" | "green" | "cyan" | undefined
+            }
           />
         ))}
       </BentoGrid>

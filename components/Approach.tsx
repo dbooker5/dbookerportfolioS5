@@ -7,27 +7,26 @@ import { CanvasRevealEffect } from "@/components/ui/CanvasRevealEffect";
 const Approach = () => {
   return (
     <section className="w-full py-20">
-      <h1 className ="heading">
+      <h1 className="heading">
         My<span className="text-purple"> Approach </span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center  gap-4">
-        <Card 
-        title="Planning & Strategy" 
-        icon={<AceternityIcon order="Phase 1" />}
-        description="I collaborate to map out your crucial goals for any successful project.
+        <Card
+          title="Planning & Strategy"
+          icon={<AceternityIcon order="Phase 1" />}
+          description="I collaborate to map out your crucial goals for any successful project.
                     I begin by understanding the client's goals, target audience, and market trends. This 
                     helps me create a solid foundation for the project."
-          >
-
+        >
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-emerald-900"
           />
         </Card>
-        <Card 
-        title="Development & Progress Update" 
-        icon={<AceternityIcon order="Phase 2" />}
-        description="I transform ideas into functional digital solutions. 
+        <Card
+          title="Development & Progress Update"
+          icon={<AceternityIcon order="Phase 2" />}
+          description="I transform ideas into functional digital solutions. 
                     I provide consistent updates, share progress milestones, and ensure every detail aligns with 
                     the project goals. Collaboration and transparency keep the development process on track."
         >
@@ -40,12 +39,11 @@ const Approach = () => {
             ]}
             dotSize={2}
           />
-          
         </Card>
-        <Card 
-        title="Development & Launch" 
-        icon={<AceternityIcon order="Phase 3"/>}
-        description="Once the development is complete, I fine-tune the final product for performance, 
+        <Card
+          title="Development & Launch"
+          icon={<AceternityIcon order="Phase 3" />}
+          description="Once the development is complete, I fine-tune the final product for performance, 
                     security, and user experience. After thorough testing and reviews, I oversee a smooth launch 
                     to deliver a polished, reliable, and impactful solution to the world."
         >
@@ -58,7 +56,7 @@ const Approach = () => {
       </div>
     </section>
   );
-}
+};
 
 const Card = ({
   title,
@@ -102,8 +100,10 @@ const Card = ({
         <h2 className="dark:text-white text-3xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center">
           {title}
         </h2>
-        <h2 className="dark:text-white text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center"
-        style={{color: '#e4ecff'}}>
+        <h2
+          className="dark:text-white text-sm opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200 text-center"
+          style={{ color: "#e4ecff" }}
+        >
           {description}
         </h2>
       </div>
@@ -111,15 +111,15 @@ const Card = ({
   );
 };
 
-const AceternityIcon = ({order}:{order:string}) => {
+const AceternityIcon = ({ order }: { order: string }) => {
   return (
     <div>
       <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-2 text-2xl font-Bold text-white backdrop-blur-3xl">
-    {order}
-  </span>
-</button>
+        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-2 text-2xl font-Bold text-white backdrop-blur-3xl">
+          {order}
+        </span>
+      </button>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBG";
@@ -9,18 +9,18 @@ import animationData from "@/data/confetti.json";
 import { IoCopyOutline } from "react-icons/io5";
 import MagicButton from "./MagicButton";
 
-export const BentoGrid = ({ 
-  className, 
-  children 
-}: { 
-  className?: string; 
-  children?: React.ReactNode 
+export const BentoGrid = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children?: React.ReactNode;
 }) => {
   return (
     <div
       className={cn(
         "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
-        className
+        className,
       )}
     >
       {children}
@@ -54,14 +54,16 @@ export const BentoGridItem = ({
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('booker@studio5ive.org');
+    navigator.clipboard.writeText("booker@studio5ive.org");
     setCopied(true);
   };
 
   const glowClasses = {
     blue: "hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] hover:border-blue-400/40",
-    purple: "hover:shadow-[0_0_20px_rgba(147,51,234,0.4)] hover:border-purple-400/40",
-    green: "hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:border-green-400/40",
+    purple:
+      "hover:shadow-[0_0_20px_rgba(147,51,234,0.4)] hover:border-purple-400/40",
+    green:
+      "hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:border-green-400/40",
     cyan: "hover:shadow-[0_0_20px_rgba(6,182,212,0.4)] hover:border-cyan-400/40",
   };
 
@@ -70,11 +72,12 @@ export const BentoGridItem = ({
       className={cn(
         "group/bento shadow-input relative row-span-1 overflow-hidden flex flex-col justify-between space-y-4 rounded-3xl border border-white/[0.1] transition-all duration-300",
         glowClasses[glowColor],
-        className
+        className,
       )}
       style={{
         background: "rgb(4,7,29)",
-        backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        backgroundColor:
+          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
@@ -83,13 +86,21 @@ export const BentoGridItem = ({
           <img
             src={img}
             alt={img}
-            className={cn("object-cover object-center absolute h-full w-full", imgClassName)}
+            className={cn(
+              "object-cover object-center absolute h-full w-full",
+              imgClassName,
+            )}
           />
         )}
 
         {/* Spare Image */}
         {spareImg && (
-          <div className={cn("absolute right-0 -bottom-5", id === 5 && "w-full opacity-80")}>
+          <div
+            className={cn(
+              "absolute right-0 -bottom-5",
+              id === 5 && "w-full opacity-80",
+            )}
+          >
             <img
               src={spareImg}
               alt={spareImg}
@@ -109,7 +120,7 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "relative z-50 md:h-full min-h-40 flex flex-col px-5 py-5 lg:p-10 transition duration-200 group-hover/bento:translate-x-2"
+            "relative z-50 md:h-full min-h-40 flex flex-col px-5 py-5 lg:p-10 transition duration-200 group-hover/bento:translate-x-2",
           )}
         >
           <div className="lg:text-3xl max-w-96 z-10 font-sans font-bold text-lg dark:text-neutral-200">
@@ -117,30 +128,30 @@ export const BentoGridItem = ({
           </div>
 
           <div className="font-sans text-sm font-extralight text-[#c1c2d3] md:text-xs lg:text-base z-10 mt-2 space-y-3">
-        {Array.isArray(description) ? (
-          description.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))
-        ) : (
-          description
-        )}
-      </div>
+            {Array.isArray(description)
+              ? description.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))
+              : description}
+          </div>
 
           {id === 2 && <GlobeDemo />}
 
           {id === 3 && (
             <div className="flex gap-3 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 lg:gap-3">
-                {["TypeScript", "React.js", "Flutter", "Next.js"].map((item) => (
-                  <span
-                    key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base rounded-lg text-center bg-[#10132E] text-white"
-                  >
-                    {item}
-                  </span>
-                ))}
+                {["TypeScript", "React.js", "Flutter", "Next.js"].map(
+                  (item) => (
+                    <span
+                      key={item}
+                      className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base rounded-lg text-center bg-[#10132E] text-white"
+                    >
+                      {item}
+                    </span>
+                  ),
+                )}
               </div>
-              
+
               <div className="flex flex-col gap-3 lg:gap-3 lg:mt-8">
                 {["Node.js", "PostgreSQL", "Firebase", "Azure"].map((item) => (
                   <span
@@ -163,14 +174,14 @@ export const BentoGridItem = ({
                     autoplay: copied,
                     animationData,
                     rendererSettings: {
-                      preserveAspectRatio: 'xMidYMid slice'
-                    }
+                      preserveAspectRatio: "xMidYMid slice",
+                    },
                   }}
                 />
               </div>
 
-              <MagicButton 
-                title={copied ? 'Email copied' : 'Copy my Email'}
+              <MagicButton
+                title={copied ? "Email copied" : "Copy my Email"}
                 icon={<IoCopyOutline />}
                 position="left"
                 otherClasses="!bg-[#161a31]"
