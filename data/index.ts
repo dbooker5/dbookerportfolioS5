@@ -9,12 +9,16 @@ export const gridItems = [
   {
     id: 1,
     title: "I'm a passionate developer and security-focused software engineer",
-    description: "Dedicated to building robust,secure, and scalable systems. My expertise spans cloud and network security, ethical hacking, and full-stack development—equipping me to create solutions that are not only functional but also resilient against real-world threats. This site highlights my technical projects, core competencies, and ongoing journey in software development and cybersecurity. Alongside my technical approach, I believe the best results come from working closely with clients at every stage. By maintaining transparent communication, sharing progress openly, and welcoming feedback, I ensure that every decision aligns with the client's vision. This collaborative process builds trust, clarity, and a final product that truly meets expectations.",
+    description: [
+                  "Dedicated to building robust,secure, and scalable systems. My expertise spans cloud and network security, ethical hacking, and full-stack development—equipping me to create solutions that are not only functional but also resilient against real-world threats. This site highlights my technical projects, core competencies, and ongoing journey in software development and cybersecurity.",
+                  "Alongside my technical approach, I believe the best results come from working closely with clients at every stage. By maintaining transparent communication, sharing progress openly, and welcoming feedback, I ensure that every decision aligns with the client's vision. This collaborative process builds trust, clarity, and a final product that truly meets expectations."
+                ],
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.png",
-    spareImg: "",
+    img: "/b1.svg",
+    spareImg: "grid.svg",
+    glowColor: "blue",
   },
   {
     id: 2,
@@ -25,37 +29,44 @@ export const gridItems = [
     titleClassName: "justify-start",
     img: "",
     spareImg: "",
+    glowColor: "purple",
   },
   {
     id: 3,
-    title: "My tech stack",
+    title: "My tech stack.",
     description: "I constantly try to improve",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
+    glowColor: "green",
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Tech, Cloud & Cybersecurity Enthusiast with a Developer Mindset.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
+    img: "/b4.svg",
+    spareImg: "/grid.svg",
+    glowColor: "cyan",
   },
 
   {
     id: 5,
     title: "Currently building smarter systems through automation & innovation.",
-    description: "By integrating modern AI capabilities into development workflows,I leverage AI-driven tools and intelligent automation to streamline processes, enhance system reliability, and deliver solutions that adapt and learn.",
+    description: [
+                  "By integrating modern AI capabilities into development workflows, I leverage AI-driven tools and intelligent automation to streamline processes, enhance system reliability, and deliver solutions that adapt and learn. This approach allows me to build systems that are faster, smarter, and more responsive to real-world demands.",
+                  "Ultimately, it enables me to create scalable products that continuously improve and deliver long-term value."
+                  ],
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "/b5.svg",
     spareImg: "/grid.svg",
+    glowColor: "purple",
   },
   {
     id: 6,
@@ -66,6 +77,7 @@ export const gridItems = [
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
     spareImg: "",
+    glowColor: "blue",
   },
 ];
 
@@ -100,7 +112,7 @@ export const projects = [
     des: "Tally App simplifies inventory management by tracking stock, sales, and business performance with real-time insights.",
     img: "/p4.svg",
     iconLists: ["/figma.svg", "/ai.svg", "/pshop.svg", "/ae.svg", "/canva.svg"],
-    link: "https://github.com/dbooker5?tab=repositories",
+    link: "https://github.com/dbooker5/b-blockcreations",
   },
 ];
 
@@ -148,6 +160,8 @@ export const companies = [
     name: "studio5ive",
     img: "/s5logo.svg",
     nameImg: "/studio5ive.svg",
+    link: "https://www.studio5ive.org",
+  
   },
 ];
 
