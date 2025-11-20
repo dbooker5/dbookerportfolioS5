@@ -37,6 +37,7 @@ export const BentoGridItem = ({
   imgClassName,
   titleClassName,
   spareImg,
+  glowColor = "blue",
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -48,6 +49,7 @@ export const BentoGridItem = ({
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
+  glowColor?: "blue" | "purple" | "green" | "cyan"; // customize as needed
 }) => {
   const [copied, setCopied] = useState(false);
 
@@ -56,11 +58,18 @@ export const BentoGridItem = ({
     setCopied(true);
   };
 
+  const glowClasses = {
+    blue: "hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] hover:border-blue-400/40",
+    purple: "hover:shadow-[0_0_20px_rgba(147,51,234,0.4)] hover:border-purple-400/40",
+    green: "hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:border-green-400/40",
+    cyan: "hover:shadow-[0_0_20px_rgba(6,182,212,0.4)] hover:border-cyan-400/40",
+  };
+
   return (
-    // Return a SINGLE div, not a header with nested elements
     <div
       className={cn(
-        "group/bento shadow-input relative row-span-1 overflow-hidden flex flex-col justify-between space-y-4 rounded-3xl border border-white-/[0.1] transition duration-200 hover:shadow-xl",
+        "group/bento shadow-input relative row-span-1 overflow-hidden flex flex-col justify-between space-y-4 rounded-3xl border border-white/[0.1] transition-all duration-300",
+        glowClasses[glowColor],
         className
       )}
       style={{
@@ -107,16 +116,22 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          <div className="font-sans text-sm font-extralight text-[#c1c2d3] md:text-xs lg:text-base z-10 mt-2">
-            {description}
-          </div>
+          <div className="font-sans text-sm font-extralight text-[#c1c2d3] md:text-xs lg:text-base z-10 mt-2 space-y-3">
+        {Array.isArray(description) ? (
+          description.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))
+        ) : (
+          description
+        )}
+      </div>
 
           {id === 2 && <GlobeDemo />}
 
           {id === 3 && (
             <div className="flex gap-3 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 lg:gap-3">
-                {["TypeScript", "React.js", "Next.js", "Tailwind"].map((item) => (
+                {["TypeScript", "React.js", "Flutter", "Next.js"].map((item) => (
                   <span
                     key={item}
                     className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base rounded-lg text-center bg-[#10132E] text-white"
@@ -127,7 +142,7 @@ export const BentoGridItem = ({
               </div>
               
               <div className="flex flex-col gap-3 lg:gap-3 lg:mt-8">
-                {["Node.js", "PostgreSQL", "Docker", "Azure"].map((item) => (
+                {["Node.js", "PostgreSQL", "Firebase", "Azure"].map((item) => (
                   <span
                     key={item}
                     className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base rounded-lg text-center bg-[#10132E] text-white"
@@ -168,3 +183,5 @@ export const BentoGridItem = ({
     </div>
   );
 };
+
+export default BentoGrid;
